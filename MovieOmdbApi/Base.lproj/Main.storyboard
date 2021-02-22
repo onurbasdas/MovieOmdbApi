@@ -17,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkh-kn-dll">
-                                <rect key="frame" x="75" y="225" width="264" height="111"/>
+                                <rect key="frame" x="75" y="265" width="264" height="111"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="111" id="OTT-D5-MQ8"/>
+                                    <constraint firstAttribute="height" constant="111" id="1mz-QK-p0F"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
@@ -28,7 +28,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPk-ch-OVf">
                                 <rect key="frame" x="83" y="540" width="248" height="107"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="107" id="5Ao-7b-zia"/>
+                                    <constraint firstAttribute="height" constant="107" id="0FR-Ug-f4B"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
                                 <state key="normal" title="Go To Main">
@@ -38,16 +38,29 @@
                                     <action selector="mainButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89V-kG-cWw"/>
                                 </connections>
                             </button>
+                            <label userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sg7-jO-LPV">
+                                <rect key="frame" x="89" y="147" width="236" height="77"/>
+                                <rect key="contentStretch" x="0.0" y="0.10000000000000001" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="fd6-wD-Tjl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="34"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
-                            <constraint firstItem="Fkh-kn-dll" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="137" id="5PG-3T-x4M"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lPk-ch-OVf" secondAttribute="bottom" constant="215" id="Is3-Rg-JE5"/>
-                            <constraint firstItem="Fkh-kn-dll" firstAttribute="centerX" secondItem="lPk-ch-OVf" secondAttribute="centerX" id="hnb-z8-HZ4"/>
-                            <constraint firstItem="lPk-ch-OVf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="iKb-L3-NiP"/>
-                            <constraint firstItem="Fkh-kn-dll" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nGD-sE-Ewe"/>
-                            <constraint firstItem="Fkh-kn-dll" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="u9z-ry-kLK"/>
+                            <constraint firstItem="Fkh-kn-dll" firstAttribute="centerX" secondItem="lPk-ch-OVf" secondAttribute="centerX" id="7lI-mZ-ikX"/>
+                            <constraint firstItem="Sg7-jO-LPV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="Aju-p5-ouK"/>
+                            <constraint firstItem="Fkh-kn-dll" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="F4G-6i-O8X"/>
+                            <constraint firstItem="Sg7-jO-LPV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NrC-lP-cDL"/>
+                            <constraint firstItem="Sg7-jO-LPV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="89" id="YIh-L9-0eu"/>
+                            <constraint firstItem="Sg7-jO-LPV" firstAttribute="centerX" secondItem="Fkh-kn-dll" secondAttribute="centerX" id="gYt-Ib-3j7"/>
+                            <constraint firstItem="Fkh-kn-dll" firstAttribute="top" secondItem="Sg7-jO-LPV" secondAttribute="bottom" constant="41" id="kyI-n6-f4Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lPk-ch-OVf" secondAttribute="bottom" constant="215" id="pIN-IN-aDi"/>
+                            <constraint firstItem="lPk-ch-OVf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="pv9-4E-CYG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TV2-HJ-gXW"/>

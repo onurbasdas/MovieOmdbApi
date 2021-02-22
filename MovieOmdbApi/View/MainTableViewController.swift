@@ -83,6 +83,7 @@ class MainTableViewController: UITableViewController {
         networkService.search(for: movieName, page: page) { [weak self] (searchObject, error) in
             DispatchQueue.main.async {
                 self?.tableView.tableFooterView?.isHidden = true
+        
             }
             
             if let search = searchObject, error == nil {
