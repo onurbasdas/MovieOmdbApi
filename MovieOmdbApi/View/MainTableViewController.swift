@@ -79,17 +79,10 @@ class MainTableViewController: UITableViewController {
     
     func loadMore(for movieName: String, page: Int) {
         loadMoreIsCalled = true
-        let spinner = UIActivityIndicatorView(style: .gray)
-        spinner.startAnimating()
-        spinner.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: tableView.bounds.width, height: CGFloat(44))
-        
-        self.tableView.tableFooterView = spinner
-        self.tableView.tableFooterView?.isHidden = false
         
         networkService.search(for: movieName, page: page) { [weak self] (searchObject, error) in
             DispatchQueue.main.async {
                 self?.tableView.tableFooterView?.isHidden = true
-                spinner.stopAnimating()
             }
             
             if let search = searchObject, error == nil {

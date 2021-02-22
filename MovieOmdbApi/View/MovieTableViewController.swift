@@ -129,7 +129,6 @@ class MovieTableViewController: UITableViewController {
             })
             
             self.nameLabel.text = movie.title
-            
             self.yearLabel.text = movie.year
             
             for label in [self.imdbRateScore, self.metascoreLabel] {
@@ -148,7 +147,7 @@ class MovieTableViewController: UITableViewController {
             _title = NSAttributedString(string: "Metascore\n",
                                         attributes: [NSAttributedString.Key.font: UIFont.preferredBoldFont(forTextStyle: .headline) ?? defaultCalloutFont ])
             _value = NSAttributedString(string: movie.metascore,
-                                        attributes: [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .callout), NSAttributedString.Key.foregroundColor: UIColor.gray])
+                                        attributes: [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .callout), NSAttributedString.Key.foregroundColor: UIColor.blue])
             self.metascoreLabel.attributedText = self.attributedString(from: [_title, _value])
             
             self.infoLabel.text = "\(movie.language) | \(movie.runtime)"

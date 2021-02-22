@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+
 extension UISearchBar {
     private var textField: UITextField? {
         let subViews = self.subviews.flatMap { $0.subviews }

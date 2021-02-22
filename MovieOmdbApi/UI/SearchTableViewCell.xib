@@ -32,15 +32,15 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmM-lz-7v2">
-                        <rect key="frame" x="122" y="120" width="179" height="25"/>
+                        <rect key="frame" x="122" y="120" width="179" height="30"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MP-v0-zIp">
-                        <rect key="frame" x="122" y="86" width="179" height="26"/>
+                        <rect key="frame" x="122" y="77" width="179" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="26" id="TuM-BI-omZ"/>
+                            <constraint firstAttribute="height" constant="35" id="TuM-BI-omZ"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -52,7 +52,7 @@
                     <constraint firstAttribute="bottomMargin" secondItem="JHs-a6-NjV" secondAttribute="bottom" constant="38" id="3lk-LJ-Haj"/>
                     <constraint firstAttribute="bottomMargin" secondItem="DZL-p1-doI" secondAttribute="bottom" constant="-4" id="EQk-cR-ATw"/>
                     <constraint firstItem="0MP-v0-zIp" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="J2T-va-A7F"/>
-                    <constraint firstItem="0MP-v0-zIp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="31" id="MVt-OU-i0h"/>
+                    <constraint firstItem="0MP-v0-zIp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="22" id="MVt-OU-i0h"/>
                     <constraint firstItem="DZL-p1-doI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-47" id="SN9-4X-Wgr"/>
                     <constraint firstItem="nmM-lz-7v2" firstAttribute="leading" secondItem="JHs-a6-NjV" secondAttribute="leading" id="SPo-FB-P0E"/>
                     <constraint firstItem="0MP-v0-zIp" firstAttribute="trailing" secondItem="nmM-lz-7v2" secondAttribute="trailing" id="Yw0-ah-NYI"/>
@@ -60,7 +60,7 @@
                     <constraint firstItem="0MP-v0-zIp" firstAttribute="leading" secondItem="DZL-p1-doI" secondAttribute="trailing" constant="8" symbolic="YES" id="gh7-fT-9IJ"/>
                     <constraint firstItem="nmM-lz-7v2" firstAttribute="top" secondItem="0MP-v0-zIp" secondAttribute="bottom" constant="8" id="lNt-2R-uMq"/>
                     <constraint firstItem="0MP-v0-zIp" firstAttribute="leading" secondItem="nmM-lz-7v2" secondAttribute="leading" id="m2s-Qd-pXb"/>
-                    <constraint firstItem="JHs-a6-NjV" firstAttribute="top" secondItem="nmM-lz-7v2" secondAttribute="bottom" constant="19" id="uzj-4Q-M6P"/>
+                    <constraint firstItem="JHs-a6-NjV" firstAttribute="top" secondItem="nmM-lz-7v2" secondAttribute="bottom" constant="14" id="uzj-4Q-M6P"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
