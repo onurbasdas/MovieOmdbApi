@@ -15,6 +15,7 @@ class MovieTableViewController: UITableViewController {
     @IBOutlet var infoLabel: UILabel!
     @IBOutlet var imdbRateScore: UILabel!
     @IBOutlet var metascoreLabel: UILabel!
+    
     @IBOutlet var directorCell: UITableViewCell!
     @IBOutlet var writerCell: UITableViewCell!
     @IBOutlet var plotCell: UITableViewCell!
@@ -35,12 +36,10 @@ class MovieTableViewController: UITableViewController {
         super.viewDidLoad()
         configureUI()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    // MARK: - Internal Functions
     
     func showHelpLabel(withText text: String) {
         DispatchQueue.main.async {
@@ -110,7 +109,6 @@ class MovieTableViewController: UITableViewController {
     func setMovieInfo(with movie: JSON.Movie){
         DispatchQueue.main.async {
             let activityView = UIActivityIndicatorView()
-            activityView.style = .gray
             self.tableView.backgroundView = UIView()
             
             self.posterImageView.image = UIImage()
@@ -142,13 +140,13 @@ class MovieTableViewController: UITableViewController {
             let defaultCalloutFont = UIFont.preferredFont(forTextStyle: .callout)
             
             var _title = NSAttributedString(string: "IMDB\n",
-                                            attributes: [NSAttributedString.Key.font: UIFont.preferredBoldFont(forTextStyle: .callout) ?? defaultCalloutFont])
+                                            attributes: [NSAttributedString.Key.font: UIFont.preferredBoldFont(forTextStyle: .headline) ?? defaultCalloutFont])
             var _value = NSAttributedString(string: movie.imdbRating,
-                                            attributes: [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .callout) , NSAttributedString.Key.foregroundColor: UIColor.gray])
+                                            attributes: [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .callout) , NSAttributedString.Key.foregroundColor: UIColor.red])
             self.imdbRateScore.attributedText = self.attributedString(from: [_title, _value])
             
             _title = NSAttributedString(string: "Metascore\n",
-                                        attributes: [NSAttributedString.Key.font: UIFont.preferredBoldFont(forTextStyle: .callout) ?? defaultCalloutFont ])
+                                        attributes: [NSAttributedString.Key.font: UIFont.preferredBoldFont(forTextStyle: .headline) ?? defaultCalloutFont ])
             _value = NSAttributedString(string: movie.metascore,
                                         attributes: [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .callout), NSAttributedString.Key.foregroundColor: UIColor.gray])
             self.metascoreLabel.attributedText = self.attributedString(from: [_title, _value])
@@ -157,25 +155,25 @@ class MovieTableViewController: UITableViewController {
             
             
             _title = NSAttributedString(string: "Director: ",
-                                        attributes: [NSAttributedString.Key.font: UIFont.preferredBoldFont(forTextStyle: .callout) ?? defaultCalloutFont ])
+                                        attributes: [NSAttributedString.Key.font: UIFont.preferredBoldFont(forTextStyle: .headline) ?? defaultCalloutFont ])
             _value = NSAttributedString(string: movie.director,
                                         attributes: [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .callout), NSAttributedString.Key.foregroundColor: UIColor.gray])
             self.directorCell.textLabel?.attributedText = self.attributedString(from: [_title, _value])
             
             _title = NSAttributedString(string: "Writer(s): ",
-                                        attributes: [NSAttributedString.Key.font: UIFont.preferredBoldFont(forTextStyle: .callout) ?? defaultCalloutFont ])
+                                        attributes: [NSAttributedString.Key.font: UIFont.preferredBoldFont(forTextStyle: .headline) ?? defaultCalloutFont ])
             _value = NSAttributedString(string: movie.writer,
                                         attributes: [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .callout), NSAttributedString.Key.foregroundColor: UIColor.gray])
             self.writerCell.textLabel?.attributedText = self.attributedString(from: [_title, _value])
             
             _title = NSAttributedString(string: "Genre: ",
-                                        attributes: [NSAttributedString.Key.font: UIFont.preferredBoldFont(forTextStyle: .callout) ?? defaultCalloutFont ])
+                                        attributes: [NSAttributedString.Key.font: UIFont.preferredBoldFont(forTextStyle: .headline) ?? defaultCalloutFont ])
             _value = NSAttributedString(string: movie.genre,
                                         attributes: [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .callout), NSAttributedString.Key.foregroundColor: UIColor.gray])
             self.genreCell.textLabel?.attributedText = self.attributedString(from: [_title, _value])
             
             _title = NSAttributedString(string: "Plot: ",
-                                        attributes: [NSAttributedString.Key.font: UIFont.preferredBoldFont(forTextStyle: .callout) ?? defaultCalloutFont ])
+                                        attributes: [NSAttributedString.Key.font: UIFont.preferredBoldFont(forTextStyle: .headline) ?? defaultCalloutFont ])
             _value = NSAttributedString(string: movie.plot,
                                         attributes: [NSAttributedString.Key.font: UIFont.preferredItalicFont(forTextStyle: .callout) ?? defaultCalloutFont, NSAttributedString.Key.foregroundColor: UIColor.gray])
             self.plotCell.textLabel?.attributedText = self.attributedString(from: [_title, _value])
@@ -192,15 +190,14 @@ class MovieTableViewController: UITableViewController {
         return mutableAttributedString
     }
     
-    // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         return numberOfSections
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 7
     }
-
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 0:
@@ -211,5 +208,5 @@ class MovieTableViewController: UITableViewController {
             return UITableView.automaticDimension
         }
     }
-
+    
 }

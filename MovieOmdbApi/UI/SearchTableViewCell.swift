@@ -28,7 +28,6 @@ class SearchTableViewCell: UITableViewCell {
     }
     func configureCell(with info: JSON.Search.Movie){
         let activityView = UIActivityIndicatorView()
-        activityView.style = .gray
         
         posterImageView.image = UIImage()
         posterImageView.clipsToBounds = true

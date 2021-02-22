@@ -29,7 +29,7 @@ class MainTableViewController: UITableViewController {
         tableView.estimatedRowHeight = 128
         tableView.rowHeight = UITableView.automaticDimension
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationItem.title = "Lodoos Movie DB"
+        self.navigationItem.title = "Lodoos"
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search..."

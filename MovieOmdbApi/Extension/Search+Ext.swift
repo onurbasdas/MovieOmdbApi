@@ -31,13 +31,13 @@ extension UISearchBar {
             let _searchIcon = searchIcon
             if newValue {
                 if activityIndicator == nil {
-                    let _activityIndicator = UIActivityIndicatorView(style: .gray)
-                    _activityIndicator.startAnimating()
-                    _activityIndicator.backgroundColor = UIColor.clear
+                    let activityIndicator = UIActivityIndicatorView(style: .gray)
+                    activityIndicator.startAnimating()
+                    activityIndicator.backgroundColor = UIColor.clear
                     self.setImage(UIImage(), for: .search, state: .normal)
-                    textField?.leftView?.addSubview(_activityIndicator)
+                    textField?.leftView?.addSubview(activityIndicator)
                     let leftViewSize = textField?.leftView?.frame.size ?? CGSize.zero
-                    _activityIndicator.center = CGPoint(x: leftViewSize.width/2, y: leftViewSize.height/2)
+                    activityIndicator.center = CGPoint(x: leftViewSize.width/2, y: leftViewSize.height/2)
                 }
             } else {
                 self.setImage(_searchIcon, for: .search, state: .normal)

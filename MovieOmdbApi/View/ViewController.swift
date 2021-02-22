@@ -24,6 +24,17 @@ class ViewController: UIViewController {
         getDataFirestore()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        lodoosLabel.center.x = view.center.x // Place it in the center x of the view.
+        lodoosLabel.center.x -= view.bounds.width // Place it on the left of the view with the width = the bounds'width of the view.
+        // animate it from the left to the right
+        UIView.animate(withDuration: 1, delay: 0, options: [.curveLinear], animations: { [self] in
+              lodoosLabel.center.x += view.bounds.width
+              self.view.layoutIfNeeded()
+        }, completion: nil)
+    }
+    
     fileprivate func startAnimation(){
         let loading = NVActivityIndicatorView(frame: .zero, type: .ballPulse, color: .orange, padding: 0)
         loading.translatesAutoresizingMaskIntoConstraints = false
@@ -64,7 +75,7 @@ class ViewController: UIViewController {
         
         startAnimation()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             if NetworkMonitor.shared.isConnected{
                 print("You are on wifi")
                 self.performSegue(withIdentifier: "toMainVC", sender: nil)
