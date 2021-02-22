@@ -159,7 +159,16 @@ class MainTableViewController: UITableViewController {
             }
         }
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Show Movie" {
+            if let viewController = segue.destination as? MovieTableViewController, let movieID = sender as? String {
+                viewController.imdbID = movieID
+            }
+        }
+    }
+    
 }
+
 
 extension MainTableViewController {
     override func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
