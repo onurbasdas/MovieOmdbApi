@@ -18,6 +18,17 @@
 		B984204725E40D760088BAC7 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B984204625E40D760088BAC7 /* MainTableViewController.swift */; };
 		B984204B25E40E7C0088BAC7 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B984204A25E40E7C0088BAC7 /* NetworkMonitor.swift */; };
 		B984205025E40EC10088BAC7 /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B984204F25E40EC10088BAC7 /* ViewController+Ext.swift */; };
+		B9DCAF8025E41170009CED11 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DCAF7E25E41170009CED11 /* SearchTableViewCell.swift */; };
+		B9DCAF8125E41170009CED11 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9DCAF7F25E41170009CED11 /* SearchTableViewCell.xib */; };
+		B9DCAF8425E412D9009CED11 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DCAF8325E412D9009CED11 /* NetworkService.swift */; };
+		B9DCAF8725E41302009CED11 /* Animation+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DCAF8625E41302009CED11 /* Animation+Ext.swift */; };
+		B9DCAF8A25E41324009CED11 /* Search+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DCAF8925E41324009CED11 /* Search+Ext.swift */; };
+		B9DCAF8D25E41339009CED11 /* Font+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DCAF8C25E41339009CED11 /* Font+Ext.swift */; };
+		B9DCAF9125E41379009CED11 /* Scrool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DCAF9025E41379009CED11 /* Scrool.swift */; };
+		B9DCAF9525E4138E009CED11 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DCAF9425E4138E009CED11 /* Endpoints.swift */; };
+		B9DCAF9825E413A4009CED11 /* JsonModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DCAF9725E413A4009CED11 /* JsonModels.swift */; };
+		B9DCAF9B25E413BA009CED11 /* Fail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DCAF9A25E413BA009CED11 /* Fail.swift */; };
+		B9DCAF9E25E4150A009CED11 /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9DCAF9D25E4150A009CED11 /* MovieTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +46,17 @@
 		B984204625E40D760088BAC7 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		B984204A25E40E7C0088BAC7 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		B984204F25E40EC10088BAC7 /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
+		B9DCAF7E25E41170009CED11 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		B9DCAF7F25E41170009CED11 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		B9DCAF8325E412D9009CED11 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B9DCAF8625E41302009CED11 /* Animation+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animation+Ext.swift"; sourceTree = "<group>"; };
+		B9DCAF8925E41324009CED11 /* Search+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Search+Ext.swift"; sourceTree = "<group>"; };
+		B9DCAF8C25E41339009CED11 /* Font+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ext.swift"; sourceTree = "<group>"; };
+		B9DCAF9025E41379009CED11 /* Scrool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scrool.swift; sourceTree = "<group>"; };
+		B9DCAF9425E4138E009CED11 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		B9DCAF9725E413A4009CED11 /* JsonModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonModels.swift; sourceTree = "<group>"; };
+		B9DCAF9A25E413BA009CED11 /* Fail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fail.swift; sourceTree = "<group>"; };
+		B9DCAF9D25E4150A009CED11 /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
 		C9E172FA16BB3BF1CF62F0FC /* Pods-MovieOmdbApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieOmdbApi.release.xcconfig"; path = "Target Support Files/Pods-MovieOmdbApi/Pods-MovieOmdbApi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +102,8 @@
 		B93C545B25E409DA0045E5AD /* MovieOmdbApi */ = {
 			isa = PBXGroup;
 			children = (
+				B9DCAF8F25E41368009CED11 /* Model */,
+				B9DCAF7C25E41101009CED11 /* UI */,
 				B984204E25E40E990088BAC7 /* Extension */,
 				B984204925E40E670088BAC7 /* Network */,
 				B93C547125E40A5C0045E5AD /* View */,
@@ -99,6 +123,7 @@
 			children = (
 				B93C546025E409DA0045E5AD /* ViewController.swift */,
 				B984204625E40D760088BAC7 /* MainTableViewController.swift */,
+				B9DCAF9D25E4150A009CED11 /* MovieTableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				B984204A25E40E7C0088BAC7 /* NetworkMonitor.swift */,
+				B9DCAF8325E412D9009CED11 /* NetworkService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -115,8 +141,31 @@
 			isa = PBXGroup;
 			children = (
 				B984204F25E40EC10088BAC7 /* ViewController+Ext.swift */,
+				B9DCAF8625E41302009CED11 /* Animation+Ext.swift */,
+				B9DCAF8925E41324009CED11 /* Search+Ext.swift */,
+				B9DCAF8C25E41339009CED11 /* Font+Ext.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		B9DCAF7C25E41101009CED11 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B9DCAF7E25E41170009CED11 /* SearchTableViewCell.swift */,
+				B9DCAF7F25E41170009CED11 /* SearchTableViewCell.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B9DCAF8F25E41368009CED11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9DCAF9025E41379009CED11 /* Scrool.swift */,
+				B9DCAF9425E4138E009CED11 /* Endpoints.swift */,
+				B9DCAF9725E413A4009CED11 /* JsonModels.swift */,
+				B9DCAF9A25E413BA009CED11 /* Fail.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F940955E129D5319D7E5F83F /* Frameworks */ = {
@@ -190,6 +239,7 @@
 				B93C547425E40AD30045E5AD /* GoogleService-Info.plist in Resources */,
 				B93C546625E409DB0045E5AD /* Assets.xcassets in Resources */,
 				B93C546425E409DA0045E5AD /* Main.storyboard in Resources */,
+				B9DCAF8125E41170009CED11 /* SearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,12 +292,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9DCAF9E25E4150A009CED11 /* MovieTableViewController.swift in Sources */,
 				B984204725E40D760088BAC7 /* MainTableViewController.swift in Sources */,
+				B9DCAF9125E41379009CED11 /* Scrool.swift in Sources */,
+				B9DCAF9525E4138E009CED11 /* Endpoints.swift in Sources */,
 				B93C546125E409DA0045E5AD /* ViewController.swift in Sources */,
+				B9DCAF8425E412D9009CED11 /* NetworkService.swift in Sources */,
+				B9DCAF8A25E41324009CED11 /* Search+Ext.swift in Sources */,
+				B9DCAF8D25E41339009CED11 /* Font+Ext.swift in Sources */,
+				B9DCAF9B25E413BA009CED11 /* Fail.swift in Sources */,
 				B984205025E40EC10088BAC7 /* ViewController+Ext.swift in Sources */,
+				B9DCAF8725E41302009CED11 /* Animation+Ext.swift in Sources */,
+				B9DCAF9825E413A4009CED11 /* JsonModels.swift in Sources */,
 				B984204B25E40E7C0088BAC7 /* NetworkMonitor.swift in Sources */,
 				B93C545D25E409DA0045E5AD /* AppDelegate.swift in Sources */,
 				B93C545F25E409DA0045E5AD /* SceneDelegate.swift in Sources */,
+				B9DCAF8025E41170009CED11 /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

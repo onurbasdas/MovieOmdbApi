@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lodoos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkh-kn-dll">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkh-kn-dll">
                                 <rect key="frame" x="75" y="225" width="264" height="111"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="111" id="OTT-D5-MQ8"/>
@@ -60,7 +60,7 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="73.660714285714278"/>
         </scene>
-        <!--Main Table View Controller-->
+        <!--Lodoos-->
         <scene sceneID="lYz-8r-5JB">
             <objects>
                 <tableViewController id="mNs-NE-A9p" customClass="MainTableViewController" customModule="MovieOmdbApi" customModuleProvider="target" sceneMemberID="viewController">
@@ -69,11 +69,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="3Ud-Ap-qrC">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="112" id="3Ud-Ap-qrC">
+                                <rect key="frame" x="0.0" y="28" width="414" height="112"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Ud-Ap-qrC" id="4ez-JH-cxj">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -83,11 +83,43 @@
                             <outlet property="delegate" destination="mNs-NE-A9p" id="gYZ-Zu-hDZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="gQY-MK-Qvs"/>
+                    <navigationItem key="navigationItem" title="Lodoos" id="gQY-MK-Qvs"/>
+                    <connections>
+                        <segue destination="ugh-xa-e6P" kind="show" identifier="Show Movie" id="yDU-F8-HLg"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nJU-eT-RTM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1817" y="74"/>
+            <point key="canvasLocation" x="1815.9420289855075" y="73.660714285714278"/>
+        </scene>
+        <!--Movie Table View Controller-->
+        <scene sceneID="OFJ-0h-YwQ">
+            <objects>
+                <tableViewController id="ugh-xa-e6P" customClass="MovieTableViewController" customModule="MovieOmdbApi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uul-eX-uXj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="211" id="Bm6-8q-m6p">
+                                <rect key="frame" x="0.0" y="28" width="414" height="211"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bm6-8q-m6p" id="jV1-dQ-l3C">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="211"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ugh-xa-e6P" id="79S-M0-72W"/>
+                            <outlet property="delegate" destination="ugh-xa-e6P" id="3KW-k7-nJ2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="OGw-o3-q3y"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9LL-aA-puT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2673.913043478261" y="73.660714285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pek-Kq-pNQ">
